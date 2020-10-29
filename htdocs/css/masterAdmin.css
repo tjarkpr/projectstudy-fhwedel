@@ -1,0 +1,512 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 76px;
+}
+main {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  height: calc(100% - 60px);
+}
+.headerPart {
+  width: 100%;
+}
+.headerUpper {
+  height: 60px;
+  background-color: #1a2357
+}
+.headerLower {
+  height: 0px;
+  background-color: #fafafa;
+}
+.headerButton {
+  height: 45px;
+  width: 80px;
+  margin-top: 7px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  cursor: pointer;
+}
+.headerButton * {
+  pointer-events: none;
+}
+.headerButton img {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-left: 27.5px;
+}
+.headerButton span {
+  float: left;
+  width: 80px;
+  line-height: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+}
+.backButton {
+  float: left;
+}
+#logoutButton {
+  float: right;
+}
+.headerLogo {
+  float: left;
+  width: 150px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 4.5px;
+}
+.headerLogo img {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.headerLogo span {
+  float: left;
+  width: 100px;
+  line-height: 50px;
+  font-family: Arial;
+  color: white;
+  font-size: 22px;
+}
+.headerButtonList {
+  float: right;
+  width: 125px;
+  height: 50px;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.headerButtonList li {
+  height: 25px;
+  width: 150px;
+  cursor: pointer;
+}
+.headerButtonList li * {
+  pointer-events: none;
+}
+.headerButtonList img {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+.headerButtonList span {
+  float: left;
+  width: 100px;
+  line-height: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+}
+.headerMenu {
+  float: left;
+  height: 45px;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.headerMenu li {
+  height: 45px;
+  margin-top: 4px;
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.headerMenu li * {
+  pointer-events: none;
+}
+.headerMenu img {
+  width: 20px;
+  height: 20px;
+}
+.headerMenu span {
+  font-family: Arial;
+  color: grey;
+  font-size: 13px;
+  width: 90px;
+  display: block;
+  text-align: center;
+}
+.infoPart {
+  width: calc(100% - 40px);
+  height: 80px;
+  background-color: white;
+  padding: 20px;
+}
+.infoPart * {
+  font-family: Arial;
+  color: #777;
+  font-size: 12px;
+}
+.mainPart {
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.statusPart {
+  width: 100%;
+  height: 400px;
+}
+.choosePart {
+  width: 100%;
+  height: 400px;
+  background-color: #fcfcfc;
+}
+.partMobile {
+  height: 100%;
+  width: 800px;
+  margin-left: calc(50% - 400px);
+}
+.choosePartOption {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 20px #ddd;
+  cursor: pointer;
+}
+.choosePartOption * {
+  pointer-events: none;
+}
+.choosePartOptionImage {
+  width: 300px;
+  height: 100px;
+  background-size: cover;
+  background-position: 0% 50%;
+  border-bottom: 1px solid #eee;
+}
+.choosePartOptionData {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+}
+.choosePartOptionData h3 {
+  float: left;
+  margin-left: 5px;
+  width: 290px;
+  line-height: 60px;
+  font-family: Arial;
+  color: #777;
+  font-size: 18px;
+}
+.choosePartOptionData span {
+  float: left;
+  margin-left: 5px;
+  width: 290px;
+  font-family: Arial;
+  color: #aaa;
+  font-size: 15px;
+}
+.statusContainer {
+  margin-top: 25px;
+  margin-left: 20px;
+  width: 760px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #eee;
+}
+.statusContainer h3 {
+  float: left;
+  margin-left: 10px;
+  width: calc(100% - 20px);
+  line-height: 40px;
+  font-family: Arial;
+  color: #777;
+  font-size: 20px;
+}
+.statusContainerImage {
+  float: left;
+  width: 100%;
+  height: 100px;
+  background-size: cover;
+  background-position: 0% 10%;
+  background-image: url("./../img/database.jpg");
+  border-bottom: 1px solid #eee;
+}
+.statusContainerData {
+  float: left;
+  margin-left: 10px;
+  width: calc(100% - 20px);
+  height: 209px;
+  overflow-y: auto;
+}
+.statusContainerData li {
+  float: left;
+  margin-top: 7.5px;
+  height: 40px;
+  width: 50%;
+}
+.statusContainerData img {
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 5px;
+  float: left;
+  width: 25px;
+  height: 25px;
+}
+.statusContainerData span {
+  float: left;
+  line-height: 40px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+.overflowContainer {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+#searchbarOverview {
+  width: 390px;
+  margin-left: 200px;
+  min-height: 30px;
+  font-family: Arial;
+  font-size: 14px;
+  color: #777;
+  border-radius: 5px;
+  border: 1px solid #777;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+}
+.overviewData, .detailData {
+  width: calc(100% - 20px);
+  margin-left: 10px;
+}
+.detailData h3, .detailData span {
+  font-family: Arial;
+  color: #777;
+}
+.detailData span {
+  font-size: 14px;
+}
+.detailData h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #777;
+}
+.detailData input {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  min-height: 30px;
+  min-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-family: Arial;
+  color: #777;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.detailViewFormular_lecturePre, .detailViewFormular_lectureAll {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+.detailViewFormular_lecturePre {
+  float: left;
+  margin-right: 10px;
+}
+.detailViewFormular_lectureAll {
+  display: none;
+}
+.formButton {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.formButton * {
+  pointer-events: none;
+}
+.detailViewFormular_lecturePre td, .detailViewFormular_lecturePre img,
+.detailViewFormular_lectureAll td {
+  height: 25px;
+}
+.detailViewFormular_lecturePre td, .detailViewFormular_lecturePre th,
+.detailViewFormular_lectureAll td, .detailViewFormular_lectureAll th {
+  font-family: Arial;
+  color: #777;
+  font-size: 12px;
+}
+.detailViewFormular_lecturePre table,
+.detailViewFormular_lectureAll table {
+  width: 100%;
+}
+.overviewData tr {
+  cursor: pointer;
+}
+.overviewData img {
+  height: 30px;
+  width: 30px;
+  margin-left: 8px;
+}
+.overviewData td {
+  height: 50px;
+  text-align: center;
+}
+.overviewData td, .overviewData th {
+  font-family: Arial;
+  font-size: 16px;
+  color: #777;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  border-radius: 10px;
+}
+.selectImage {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+.selectTd {
+  width: 40px;
+}
+#lectureOption {
+  float: left;
+  margin-left: 50px;
+}
+#programOption {
+  float: right;
+  margin-right: 50px;
+}
+#userOption {
+  float: left;
+  margin-left: 250px;
+}
+#lectureOption .choosePartOptionImage {
+  background-image: url("./../img/lecture.png");
+}
+#programOption .choosePartOptionImage {
+  background-image: url("./../img/program.png");
+}
+#userOption .choosePartOptionImage {
+  background-image: url("./../img/user.png");
+}
+#subLecture, #subProgram, #editButton, .backButton, .headerMenu {
+  display: none;
+}
+.toggleBlock {
+  display: block;
+}
+#editButton.toggleInline {
+  display: inline-block;
+}
+.toggleHeader {
+  height: 120px;
+}
+.toggleHeaderUpper {
+  height: 59px;
+}
+.toggleHeaderLower {
+  height: 55px;
+  box-shadow: 0 5px 5px -5px #777;
+}
+.toggleMain {
+  top: 120px;
+  height: calc(100% - 120px);
+}
+@media screen and (max-width:800px) {
+  #searchbarOverview {
+    margin-left: 25%;
+    width: 49%;
+  }
+  .statusContainerData li {
+    width: 100%;
+  }
+  .statusContainer {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .partMobile {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .choosePartOption {
+    height: 100px;
+    width: calc(100% - 20px);
+  }
+  #programOption, #lectureOption, #userOption {
+    float: left;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+  .choosePartOptionImage {
+    float: left;
+    width: 50px;
+    height: 100%;
+    border: none;
+  }
+  .choosePartOptionData {
+    float: left;
+    width: calc(100% - 50px);
+    height: 100px;
+  }
+  .choosePartOptionData h3 {
+    width: calc(100% - 10px);
+    line-height: 40px;
+    font-size: 17px;
+  }
+  .choosePartOptionData span {
+    width: calc(100% - 10px);
+  }
+}
+@media screen and (max-width:600px) {
+  .detailViewFormular_lecturePre, .detailViewFormular_lectureAll {
+    width: 200px;
+  }
+  .detailData input {
+    min-width: 200px;
+  }
+  .headerButton, .headerButtonList , .headerMenu {
+    transform: scale(0.9);
+  }
+  .headerMenu li, .headerMenu span {
+    width: 70px;
+  }
+  .headerLogo {
+    display: none;
+  }
+  .headerButtonList {
+    width: 160px;
+    height: 45px;
+    margin-right: 0px;
+  }
+  .headerButtonList li {
+    float: left;
+    height: 45px;
+    width: 80px;
+  }
+  .headerButtonList img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-left: 27.5px;
+  }
+  .headerButtonList span {
+    float: left;
+    width: 80px;
+  }
+}

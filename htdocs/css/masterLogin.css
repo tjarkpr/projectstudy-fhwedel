@@ -1,0 +1,174 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+}
+.headerPart {
+  width: 100%;
+  height: 60px;
+  background-color: #1a2357;
+}
+.headerLogo {
+  float: left;
+  width: 300px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 4.5px;
+}
+.headerLogo img {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.headerLogo span {
+  float: left;
+  width: 250px;
+  line-height: 50px;
+  font-family: Arial;
+  color: white;
+  font-size: 22px;
+}
+.headerButtonList {
+  float: right;
+  width: 125px;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.headerButtonList li {
+  height: 25px;
+  width: 150px;
+  cursor: pointer;
+  list-style: none;
+}
+.headerButtonList li * {
+  pointer-events: none;
+}
+.headerButtonList img {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+.headerButtonList span {
+  float: left;
+  width: 100px;
+  line-height: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+}
+.mainContainer {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  top: calc(50% - 190px);
+  background-color: #fcfcfc;
+}
+.centerContainerElement {
+  width: 600px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px #ddd;
+  text-align: center;
+  font-family: Arial;
+  color: #777;
+}
+.centerContainerElementImage {
+  width: 100%;
+  height: 100px;
+  background-image: url('./../img/welcome.jpg');
+  background-size: cover;
+  background-position: 0% 0%;
+  border-bottom: 1px solid #eee;
+}
+.centerContainerElement p {
+  margin-top: 20px;
+  margin-left: 5px;
+  width: calc(100% - 10px);
+  font-family: Arial;
+  color: #777;
+}
+.centerContainerElement input, .centerContainerElement select {
+  height: 30px;
+  width: 250px;
+  margin-left: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  font-family: Arial;
+  color: #777;
+  font-size: 16px;
+}
+.centerContainerElementButton {
+  height: 40px;
+  width: 100px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  background-color: #eee;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+.centerContainerElementButton span {
+  line-height: 40px;
+  width: 100px;
+  font-family: Arial;
+  color: #777;
+  pointer-events: none;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width:600px) {
+  .headerButtonList, .headerLogo {
+    transform: scale(0.9);
+  }
+  .centerContainerElement {
+    width: 100%;
+    margin-left: none;
+    margin-right: none;
+  }
+  .centerContainerElement input, .centerContainerElement select {
+    width: 150px;
+  }
+  .centerContainerElement p {
+    font-size: 13px;
+  }
+  .headerLogo {
+    width: 50px;
+  }
+  .headerLogo span {
+    display: none;
+  }
+  .headerButtonList {
+    width: 180px;
+    height: 45px;
+  }
+  .headerButtonList li {
+    float: left;
+    height: 45px;
+    width: 80px;
+    margin-left: 10px;
+  }
+  .headerButtonList img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-left: 27.5px;
+  }
+  .headerButtonList span {
+    float: left;
+    width: 80px;
+  }
+}

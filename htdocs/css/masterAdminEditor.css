@@ -1,0 +1,374 @@
+header {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+}
+main {
+  position: absolute;
+  width: 100%;
+  top: 120px;
+  height: calc(100% - 120px);
+}
+.mainPart {
+  width: 100%;
+  height: 100%;
+}
+.subPart {
+  display: none;
+  position: absolute;
+  top: 10px;
+  width: 600px;
+  left: calc(50% - 300px);
+  background-color: white;
+  box-shadow: 0 0 5px #777;
+}
+#movePage {
+  height: 200px;
+}
+#addPage {
+  height: 490px;
+}
+.subPartMenu {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-family: Arial;
+  color: #777;
+  line-height: 50px;
+}
+.subPartPage {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: calc(100% - 100px);
+}
+.toggleSubMenuPart {
+  background-color: #eee;
+}
+.subPartPage span {
+  margin-left: 10px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #777;
+}
+.subPartPage input {
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
+  min-height: 30px;
+  min-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #777;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: Arial;
+  color: #777;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.addPageLectures {
+  margin-left: 10px;
+  margin-top: 5px;
+  width: 400px;
+  height: 175px;
+  border: 1px solid #777;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+.addPageLectures td, .addPageLectures th {
+  height: 35px;
+  cursor: pointer;
+}
+.addPageLectures td, .addPageLectures th {
+  font-family: Arial;
+  color: #777;
+}
+.selectTd {
+  width: 35px;
+}
+.selectImage {
+  display: none;
+  width: 35px;
+  height: 35px;
+}
+.addPageLectures table {
+  width: 100%;
+}
+#upperSub {
+  top: 0px;
+  border-bottom: 1px solid #eee;
+}
+#lowerSub {
+  bottom: 0px;
+  border-top: 1px solid #eee;
+}
+.subPartMenu li {
+  float: left;
+  height: 50px;
+  width: 50%;
+  cursor: pointer;
+}
+.subPartMenu span {
+  line-height: 50px;
+  width: 100%;
+  font-family: Arial;
+  color: grey;
+  font-size: 16px;
+  pointer-events: none;
+}
+.headerPart {
+  width: 100%;
+}
+.headerUpper {
+  height: 60px;
+  background-color: #1a2357
+}
+.headerLower {
+  height: 55px;
+  box-shadow: 0 5px 5px -5px #777;
+  background-color: #fafafa;
+}
+.headerButton {
+  height: 45px;
+  width: 80px;
+  margin-top: 7px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  cursor: pointer;
+}
+.headerButton * {
+  pointer-events: none;
+}
+.headerButton img {
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-left: 27.5px;
+}
+.headerButton span {
+  float: left;
+  width: 80px;
+  line-height: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+}
+.backButton {
+  float: left;
+}
+#logoutButton {
+  float: right;
+}
+.headerLogo {
+  float: left;
+  width: 150px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 4.5px;
+}
+.headerLogo img {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+.headerLogo span {
+  float: left;
+  width: 100px;
+  line-height: 50px;
+  font-family: Arial;
+  color: white;
+  font-size: 22px;
+}
+.headerButtonList {
+  float: right;
+  width: 125px;
+  height: 50px;
+  margin-top: 8px;
+  margin-right: 10px;
+}
+.headerButtonList li {
+  height: 25px;
+  width: 150px;
+  cursor: pointer;
+}
+.headerButtonList li * {
+  pointer-events: none;
+}
+.headerButtonList img {
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+.headerButtonList span {
+  float: left;
+  width: 100px;
+  line-height: 20px;
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  font-size: 14px;
+}
+.headerMenu {
+  float: left;
+  height: 45px;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: calc(100% - 10px);
+  text-align: center;
+}
+.headerMenu li {
+  height: 45px;
+  margin-top: 4px;
+  width: 90px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.headerMenu li * {
+  pointer-events: none;
+}
+.headerMenu img {
+  width: 20px;
+  height: 20px;
+}
+.headerMenu span {
+  font-family: Arial;
+  color: grey;
+  font-size: 13px;
+  width: 90px;
+  display: block;
+  text-align: center;
+}
+.tablePartsMenu {
+  position: absolute;
+  left: calc(50% - 110px);
+  width: 220px;
+  height: 50px;
+  background-color: white;
+}
+.tablePartsMenuItem {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#left {
+  float: left;
+}
+#right {
+  float: right;
+}
+.tablePartsMenu h3 {
+  position: absolute;
+  left: calc(50% - 40px);
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 50px;
+  color: #777;
+}
+.tableParts , .tablePart, .tablePartsMenu, .tablePartsMenuItem {
+  display: none;
+}
+.table, .tableParts {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.tablePart {
+  width: 175px;
+}
+.mainTable, .tablePart {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table td, .tablePart td {
+  height: 100px;
+  min-width: 130px;
+  max-width: 131px;
+  font-family: Arial;
+  font-size: 12px;
+  border: 1.5px solid #ddd;
+  text-align: center;
+  color: #777;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-y: auto;
+}
+.table th, .tablePart th {
+  height: 100px;
+  font-family: Arial;
+  font-size: 12px;
+  border: 1.5px solid #ddd;
+  color: #777;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.subtable {
+  margin-top: 10px;
+  display: none;
+  width: 130px;
+  background-color: white;
+}
+.subtable td {
+  min-width: 75px;
+  max-width: 79px;
+}
+.subtable td,.subtable th {
+  height: 30px;
+  font-size: 9px;
+}
+@media screen and (max-width:900px) {
+  .tableParts, .tablePartsMenu {
+    display: block;
+  }
+  .table {
+    display: none;
+  }
+}
+@media screen and (max-width:600px) {
+  .subPart {
+    width: 100%;
+    left: 0px;
+  }
+  .headerLogo {
+    display: none;
+  }
+  .headerButtonList {
+    width: 180px;
+    height: 45px;
+  }
+  .headerButtonList li {
+    float: left;
+    height: 45px;
+    width: 80px;
+    margin-left: 10px;
+  }
+  .headerButtonList img {
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin-left: 27.5px;
+  }
+  .headerButtonList span {
+    float: left;
+    width: 80px;
+  }
+}
+.toggleBlock {
+  display: block;
+}
+.selectEditor {
+  background-color: #ebf2f7;
+}

@@ -1,0 +1,16 @@
+* {margin: 0;padding: 0;cursor: default;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none; overflow: hidden;}
+body {background-color: white;}
+.hide {display: none;}
+.popUp {
+  font-family: Arial;
+  position: absolute;
+  background-color: white;
+  top: 65px;
+  left: 10px;
+  height: calc(100% - 115px);
+  width: calc(100% - 60px);
+  overflow-Y: auto;
+  font-size: 16px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px #777;
+}
